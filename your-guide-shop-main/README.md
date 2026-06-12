@@ -4,6 +4,10 @@ An AI-powered e-commerce assistant that lets users browse products, get recommen
 
 Built with React, Node.js, Express, SQLite, and the Groq API with RAG (Retrieval-Augmented Generation).
 
+# Live Demo
+Frontend: https://smart-ordering-assistance.vercel.app/
+Backend API: https://smart-ordering-assistance.onrender.com/
+
 ## Features
 
 - 🤖 AI chat assistant powered by Groq API
@@ -13,6 +17,7 @@ Built with React, Node.js, Express, SQLite, and the Groq API with RAG (Retrieval
 - 🔐 JWT-based user authentication
 - 🌙 Dark / light mode
 - 📱 Responsive design
+
 
 ## Tech Stack
 
@@ -24,11 +29,37 @@ Built with React, Node.js, Express, SQLite, and the Groq API with RAG (Retrieval
 - TanStack Query
 
 **Backend**
+```
 - Node.js + Express
 - TypeScript
 - SQLite (better-sqlite3)
 - JWT authentication
 - Groq API (LLM)
+
+  **Deployment**
+- Vercel (Frontend)
+- Render (Backend)
+
+ **Architecture**
+User
+  │
+  ▼
+React Frontend
+  │
+  ▼
+Express API
+  │
+  ├── Authentication (JWT)
+  ├── Product Management
+  ├── Cart & Orders
+  └── RAG Service
+          │
+          ▼
+      Groq API
+          │
+          ▼
+      SQLite Database
+```
 
 ## Getting Started
 
